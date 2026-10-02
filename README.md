@@ -90,48 +90,83 @@ Snapchat est une marque de Snap Inc. Memories Map n'est ni affilié, ni soutenu,
 
 ## English
 
-**Your Snapchat Memories, back in order and on a map.**
+**Your Snapchat memories, finally sorted and on a map.**
 
-When you download your Memories from Snapchat, they lose their date and location. Memories Map is a free Windows
-app that gives them back: each photo and video gets its original date, its GPS position, and its captions and
-stickers. An interactive map then lets you find each memory where you took it.
+Downloaded from Snapchat, your memories lose their date and location. Memories Map, free software for Windows,
+gives them back: every photo and video gets back its original date, its GPS position, its text and its stickers.
+An interactive map then lets you find each memory right where you took it.
 
 ### [Download Memories Map for Windows](https://github.com/Memories-Map/memories-map/releases/latest/download/Memories-Map.zip)
 
-Free · Windows 10 and 11 (64-bit) · no account needed · your photos and videos never leave your computer.
-The app is in French for now.
+Free · Windows 10 and 11 (64-bit) · no account to create · your photos and videos never leave your computer
 
-- **Original date and time**, in the local time of the place where you were.
-- **GPS position** written into each file: your memories show up in Places on iPhone and on the Google Photos map.
-- **Captions, stickers and drawings** burned into the photos and videos.
-- **Long videos** that Snapchat split into pieces are joined back together, in H.264 so they play everywhere.
-- Files named by date and place, for example `14-07-2023 22h15 - Montmartre, Paris.jpg`, sorted by year and month.
-- An offline **map of your memories**, from the whole world down to street names.
-- Exports of any size. Processing can be stopped and resumed where it left off.
+![Memories map at street zoom, with fictitious memories around the Champ de Mars in Paris](images/carte-rue.jpg)
 
-### How it works
+## What Memories Map does
 
-1. **Request your Memories from Snapchat.** In the app, open your profile (your Bitmoji), tap the gear icon at the
-   top right, go to My Data, turn on the export of your Memories, choose the whole period, then enter your email
-   address.
-2. **Download all the parts.** Snapchat emails you a link after a few hours to a few days. Download all the ZIP
-   files into one folder, without unzipping them.
-3. **Run Memories Map.** Unzip `Memories-Map.zip` (right-click, Extract All), open `Memories Map.exe`, choose the
+| Downloaded from Snapchat | With Memories Map |
+|---|---|
+| Date: the download date, not the date of the memory | Original date and time, in the local time of the place |
+| Location: none | GPS position written into each file: "Places" on iPhone, Google Photos map |
+| Text and stickers in separate files | Text, stickers and drawings burned in |
+| Long videos cut into pieces | Videos joined back together, in H.264 format that plays everywhere |
+
+- Files named by date and place, for example `14-07-2023 22h15 - Montmartre, Paris.jpg`, sorted by year and by
+  month.
+- A map of your memories, from the whole world down to street names, grouped by country, city and neighbourhood.
+  It opens with a double-click and works without Internet.
+- Exports of any size, from a few memories to several hundred GB. Processing can be stopped and then resumed where
+  it left off.
+
+![World map with fictitious memories grouped by country](images/carte-monde.jpg)
+
+## How it works
+
+1. **Request your memories from Snapchat.** In the app: your profile (your Bitmoji), the gear icon at the top
+   right, "My Data", "Export your Memories", period "All time", then your email address.
+2. **Download all the parts.** Snapchat sends a link by email, after a few hours to a few days. Download all the
+   ZIP files into one folder, without unzipping them.
+3. **Run Memories Map.** Unzip `Memories-Map.zip` (right-click, "Extract All"), open `Memories Map.exe`, choose the
    folder with the ZIP files and an empty folder for the result, then click « Retrouver mes souvenirs » (Find my
    memories).
 
-If Windows shows "Windows protected your PC", the app is simply new and not yet widely downloaded: click
-**More info**, then **Run anyway**. To check that your file is the original, compare its SHA-256 fingerprint
-(`Get-FileHash .\Memories-Map.zip -Algorithm SHA256` in PowerShell) with the one shown on the
-[latest release](https://github.com/Memories-Map/memories-map/releases/latest).
+On the destination drive, plan for about the size of the ZIP files, plus about 1 GB for the detailed street map.
+Memories Map checks the free space before starting and never modifies the original ZIP files.
 
-### Your data
+![The Memories Map window during processing](images/logiciel.jpg)
 
-Everything is processed on your computer: your photos, videos and dates are never sent anywhere. Two optional
-features use the Internet: precise place names (GeoNames, only the country name is sent) and the detailed street
-map (OpenStreetMap via Protomaps, the server only sees which areas of about 8 km are requested). Nothing is
-installed in Windows: to remove the app, just delete its folder.
+## If Windows shows a warning
 
-Support: memoriesmap@proton.me. Third-party components and licenses: see [LICENCES.txt](LICENCES.txt).
+On first launch, Windows may show "Windows protected your PC", simply because the software is new and not yet
+widely downloaded. Click **More info**, then **Run anyway**.
 
-Snapchat is a trademark of Snap Inc. Memories Map is not affiliated with, endorsed or sponsored by Snap Inc.
+To check that your file is the original, compare its SHA-256 fingerprint with the one shown on the
+[latest release](https://github.com/Memories-Map/memories-map/releases/latest) page. Open PowerShell in the
+download folder and type:
+
+```powershell
+Get-FileHash .\Memories-Map.zip -Algorithm SHA256
+```
+
+## Your data
+
+Everything is processed on your computer: your photos, videos and dates are never sent. Two optional features use
+the Internet:
+
+- **Precise place names**: downloads the public list of places in the countries you visited (GeoNames). Only the
+  name of the country is sent.
+- **Detailed street map**: downloads the streets and buildings (OpenStreetMap, prepared by Protomaps) around your
+  memories. The server only sees which areas of about 8 km are requested, never your photos, videos or dates.
+
+Nothing is installed in Windows: to remove the software, simply delete its folder.
+
+## Help
+
+Write to memoriesmap@proton.me.
+
+## Licenses
+
+Memories Map relies on free software and data: FFmpeg (GNU GPL), ExifTool, Leaflet, MapLibre, Protomaps,
+OpenStreetMap (ODbL), GeoNames (CC BY 4.0) and Natural Earth. The details are in [LICENCES.txt](LICENCES.txt).
+
+Snapchat is a trademark of Snap Inc. Memories Map is not affiliated with, endorsed by or approved by Snap Inc.
