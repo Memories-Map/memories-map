@@ -1,0 +1,43 @@
+Memories Map — composants et données tiers
+==========================================
+
+Memories Map s'appuie sur les logiciels et données suivants. Chacun reste sous sa propre licence.
+
+LOGICIELS FOURNIS AVEC MEMORIES MAP (dossier vendor)
+
+- FFmpeg 9.0.2 (version « essentials » de Gyan Doshi, www.gyan.dev) — GNU GPL version 3.
+  Copyright (c) 2000-2026 les développeurs de FFmpeg. FFmpeg est utilisé comme programme séparé.
+  Code source : https://ffmpeg.org/download.html (version 9.0.2) et, pour les bibliothèques incluses dans cette
+  version, https://www.gyan.dev/ffmpeg/builds/. Le code source correspondant est fourni sur simple demande à
+  memoriesmap@proton.me, pendant au moins trois ans après la dernière distribution de cette version.
+  Texte de la licence : https://www.gnu.org/licenses/gpl-3.0.html
+
+- ExifTool 13.59, Phil Harvey (exiftool.org), version Windows d'Oliver Betz — même licence que Perl
+  (Artistic License ou GNU GPL). https://exiftool.org
+
+- go-pmtiles 1.31.2, Protomaps LLC — licence BSD à 3 clauses (fichier vendor/pmtiles/LICENSE).
+  https://github.com/protomaps/go-pmtiles
+
+BIBLIOTHÈQUES DE LA CARTE (dossier _carte/lib de chaque carte créée)
+
+- Leaflet 1.9.4 — licence BSD à 2 clauses. https://leafletjs.com
+- MapLibre GL JS 5.24.0 — licence BSD à 3 clauses. https://maplibre.org
+- @maplibre/maplibre-gl-leaflet 0.1.4 — licence ISC.
+- PMTiles 4.5.0 et @protomaps/basemaps 5.7.2, Protomaps LLC — licence BSD à 3 clauses.
+- Polices Noto Sans — SIL Open Font License 1.1. Icônes Protomaps (basemaps-assets) — licence de Protomaps.
+
+DONNÉES
+
+- OpenStreetMap — © contributeurs OpenStreetMap, Open Database License (ODbL) 1.0. https://www.openstreetmap.org/copyright
+  Tuiles préparées par Protomaps (https://protomaps.com).
+- GeoNames — Creative Commons Attribution 4.0 (CC BY 4.0). https://www.geonames.org
+- Natural Earth — domaine public. https://www.naturalearthdata.com
+- Base de fuseaux horaires (tzdata, timezonefinder) — domaine public / licence MIT.
+
+PROGRAMME (Python et bibliothèques)
+
+- Python 3 — Python Software Foundation License.
+- Pillow — licence HPND (MIT-CMU). numpy — licence BSD. timezonefinder — licence MIT. h3 — licence Apache 2.0.
+- tzdata — licence Apache 2.0. Tcl/Tk (fenêtre) — licence BSD.
+
+Snapchat est une marque de Snap Inc. Memories Map n'est ni affilié, ni soutenu, ni approuvé par Snap Inc.
