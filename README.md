@@ -42,7 +42,8 @@ Gratuit · Windows 10 et 11 (64 bits) · aucun compte à créer · vos photos et
    `Memories Map.exe`, choisissez le dossier des ZIP et un dossier vide pour le résultat, puis cliquez sur
    « Retrouver mes souvenirs ».
 
-Prévoyez sur le disque de destination environ la taille des ZIP, plus environ 1 Go pour le plan détaillé des rues.
+Prévoyez sur le disque de destination environ la taille des ZIP, plus 50 à 600 Mo pour le plan détaillé des rues
+(selon le nombre de lieux).
 Memories Map vérifie la place libre avant de commencer et ne modifie jamais les ZIP d'origine.
 
 ![La fenêtre de Memories Map pendant le traitement](images/logiciel.jpg)
@@ -69,8 +70,8 @@ facultatives utilisent Internet :
 - **Noms de lieux précis** : télécharge la liste publique des lieux des pays visités (GeoNames). Seul le nom du
   pays est envoyé.
 - **Plan détaillé des rues** : télécharge les rues et bâtiments (OpenStreetMap, préparés par Protomaps) autour de
-  vos souvenirs. Le serveur voit seulement quelles zones d'environ 8 km sont demandées, jamais vos photos, vidéos
-  ou dates.
+  vos souvenirs. Le serveur voit seulement quelles zones (de 8 à 75 km) sont demandées, jamais vos photos,
+  vidéos ou dates.
 
 Rien n'est installé dans Windows : pour supprimer le logiciel, effacez simplement son dossier.
 
@@ -130,7 +131,8 @@ Free · Windows 10 and 11 (64-bit) · no account to create · your photos and vi
    folder with the ZIP files and an empty folder for the result, then click « Retrouver mes souvenirs » (Find my
    memories).
 
-On the destination drive, plan for about the size of the ZIP files, plus about 1 GB for the detailed street map.
+On the destination drive, plan for about the size of the ZIP files, plus 50 to 600 MB for the detailed street map
+(depending on the number of places).
 Memories Map checks the free space before starting and never modifies the original ZIP files.
 
 ![The Memories Map window during processing](images/logiciel.jpg)
@@ -156,7 +158,7 @@ the Internet:
 - **Precise place names**: downloads the public list of places in the countries you visited (GeoNames). Only the
   name of the country is sent.
 - **Detailed street map**: downloads the streets and buildings (OpenStreetMap, prepared by Protomaps) around your
-  memories. The server only sees which areas of about 8 km are requested, never your photos, videos or dates.
+  memories. The server only sees which areas (8 to 75 km wide) are requested, never your photos, videos or dates.
 
 Nothing is installed in Windows: to remove the software, simply delete its folder.
 
