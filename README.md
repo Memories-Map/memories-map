@@ -15,6 +15,8 @@ Both contain English and French: you can switch language at any time at the top 
 
 Free · Windows 10 and 11 (64-bit) · no account to create · your photos and videos never leave your computer
 
+Website, step-by-step guide and FAQ: [mymemoriesmap.com](https://mymemoriesmap.com)
+
 ![Memories map at street zoom, with fictitious memories around the Champ de Mars in Paris](images/carte-rue-en.jpg)
 
 ## What Memories Map does
@@ -104,6 +106,8 @@ Les deux contiennent le français et l'anglais : vous pouvez changer de langue �
 fenêtre.
 
 Gratuit · Windows 10 et 11 (64 bits) · aucun compte à créer · vos photos et vidéos ne quittent jamais votre ordinateur
+
+Site, guide pas à pas et questions fréquentes : [mymemoriesmap.com/fr](https://mymemoriesmap.com/fr/)
 
 ![Carte des souvenirs en zoom de rue, avec des souvenirs fictifs autour du Champ de Mars à Paris](images/carte-rue.jpg)
 
